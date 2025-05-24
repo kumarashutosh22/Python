@@ -12,4 +12,5 @@
 from itertools import groupby
 
 # print(' '.join([f"({len(list(g))}, {i})" for i,g in groupby(input())]))
-print(' '.join([f"({len(list(g))}, {i})" for i,g in groupby('1222311')]))
+# print(' '.join([f"({len(list(g))}, {i})" for i,g in groupby('1222311')]))
+print(' '.join(f"({sum(1 for _ in g)}, {i})" for i, g in groupby('1222311')))
